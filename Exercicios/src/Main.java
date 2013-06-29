@@ -13,7 +13,7 @@ public class Main {
 		int anoAtual = scanner.nextInt();
 
 		int idade = anoAtual - anoDeNascimento;
-		System.out.println("Este ano vocÍ faz: " + idade + " anos.");
+		System.out.println("Este ano voc√™ faz: " + idade + " anos.");
 
 		return idade;
 
@@ -27,7 +27,7 @@ public class Main {
 		double total = scanner.nextDouble();
 
 		double gorjeta = total * 0.1;
-		System.out.println("A gorjeta do garÁom: " + gorjeta + "R$.");
+		System.out.println("A gorjeta do gar√ßom: " + gorjeta + "R$.");
 
 	}
 
@@ -35,18 +35,18 @@ public class Main {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite o n˙mero de homens: ");
+		System.out.println("Digite o n√∫mero de homens: ");
 		int homens = scanner.nextInt();
 
-		System.out.println("Digite o n˙mero de mulheres: ");
+		System.out.println("Digite o n√∫mero de mulheres: ");
 		int mulheres = scanner.nextInt();
 
 		int total = mulheres + homens;
 		double totalAlunos = (double) total;
 
-		System.out.println("A pocentagem de homens È: "
+		System.out.println("A pocentagem de homens √©: "
 				+ ((100 * homens) / totalAlunos) + "%.");
-		System.out.println("A pocentagem de mulheres È: "
+		System.out.println("A pocentagem de mulheres √©: "
 				+ ((100 * mulheres) / totalAlunos) + "%.");
 
 	}
@@ -60,11 +60,11 @@ public class Main {
 
 		if (idade >= 18) {
 
-			System.out.println("VocÍ È maior de idade. ");
+			System.out.println("Voc√™ √© maior de idade. ");
 
 		} else {
 
-			System.out.println("VocÍ È menor de idade. ");
+			System.out.println("Voc√™ √© menor de idade. ");
 
 		}
 
@@ -82,17 +82,17 @@ public class Main {
 
 		double liquido = bruto - descontos;
 
-		System.out.println("Digite o valor doemprestimo: ");
+		System.out.println("Digite o valor do empr√©stimo: ");
 		double emprestimo = scanner.nextDouble();
 
 		if (emprestimo > (0.3 * liquido)) {
 
 			System.out
-					.println("VocÍ n„o tem saldo para fazer esse emprÈstimo. ");
+			.println("Voc√™ n√£o tem saldo para fazer esse empr√©stimo. ");
 
 		} else {
 
-			System.out.println("EmprÈstimo liberado. ");
+			System.out.println("Empr√©stimo liberado. ");
 
 		}
 	}
@@ -101,336 +101,341 @@ public class Main {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite a 1™ nota: ");
+		System.out.println("Digite a 1¬™ nota: ");
 		double nota1 = scanner.nextDouble();
 
-		System.out.println("Digite a 2™ nota: ");
+		System.out.println("Digite a 2¬™ nota: ");
 		double nota2 = scanner.nextDouble();
 
-		System.out.println("Digite a 3™ nota: ");
+		System.out.println("Digite a 3¬™ nota: ");
 		double nota3 = scanner.nextDouble();
 
 		double media = (nota1 + nota2 + nota3) / 3;
 
 		if (media >= 7) {
 
-			System.out.println("VocÍ passou. ");
+			System.out.println("Voc√™ passou. ");
 
 		} else {
 
 			if (media >= 5) {
 
-				System.out.println("VocÍ est· em recuperaÁ„o. ");
+				System.out.println("Voc√™ est√° em recupera√ß√£o. ");
 
-				} else {
+			} else {
 
-					System.out.println("vocÍ est· reprovado. ");
+				System.out.println("voc√™ est√° reprovado. ");
 
-				}
+			}
 
-			
 		}
 	}
-	
+
 	public static void exercicio7() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite a 1™ nota: ");
+		System.out.println("Digite a 1¬™ nota: ");
 		double nota1 = scanner.nextDouble();
 
-		System.out.println("Digite a 2™ nota: ");
+		System.out.println("Digite a 2¬™ nota: ");
 		double nota2 = scanner.nextDouble();
 
-		System.out.println("Digite a 3™ nota: ");
+		System.out.println("Digite a 3¬™ nota: ");
 		double nota3 = scanner.nextDouble();
 
 		double media = (nota1 + nota2 + nota3) / 3;
 
 		if (media >= 7) {
 
-			System.out.println("VocÍ passou. ");
+			System.out.println("Voc√™ passou. ");
 
 		} else {
 
 			if (media >= 5) {
 
-				System.out.println("VocÍ est· em recuperaÁ„o. ");
+				System.out.println("Voc√™ est√° em recupera√ß√£o. ");
 
-				System.out.println("Digite a nota da recuperaÁ„o: ");
+				System.out.println("Digite a nota da recupera√ß√£o: ");
 				double rec = scanner.nextDouble();
 
 				if (rec >= 5) {
 
-					System.out.println("VocÍ passou. ");
+					System.out.println("Voc√™ passou. ");
 
 				} else {
 
-					System.out.println("vocÍ est· reprovado. ");
+					System.out.println("voc√™ est√° reprovado. ");
 
 				}
 
 			}
 		}
 	}
-	
 
 	public static void exercicio8() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite o mÍs: ");
+		System.out.println("Digite o m√™s: ");
 		String mes = scanner.nextLine();
-		
-		if(mes.equalsIgnoreCase("janeiro")){
-			
-			System.out.println(mes + " È o 1∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("fevereiro")){
-			
-			System.out.println(mes + " È o 2∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("marÁo")){
-			
-			System.out.println(mes + " È o 3∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("abril")){
-			
-			System.out.println(mes + " È o 4∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("maio")){
-			
-			System.out.println(mes + " È o 5∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("junho")){
-			
-			System.out.println(mes + " È o 6∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("julho")){
-			
-			System.out.println(mes + " È o 7∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("agosto")){
-			
-			System.out.println(mes + " È o 8∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("setembro")){
-			
-			System.out.println(mes + " È o 9∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("outubro")){
-			
-			System.out.println(mes + " È o 10∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("novembro")){
-			
-			System.out.println(mes + " È o 11∫ mÍs doano ");
-			
-		}else if(mes.equalsIgnoreCase("dezembro")){
-			
-			System.out.println(mes + " È o 12∫ mÍs doano ");
-			
-		}else{
-			System.out.println("O mÍs digitado n„o exite.");
+
+		if (mes.equalsIgnoreCase("janeiro")) {
+
+			System.out.println(mes + " √© o 1¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("fevereiro")) {
+
+			System.out.println(mes + " √© o 2¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("mar√ßo")) {
+
+			System.out.println(mes + " √© o 3¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("abril")) {
+
+			System.out.println(mes + " √© o 4¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("maio")) {
+
+			System.out.println(mes + " √© o 5¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("junho")) {
+
+			System.out.println(mes + " √© o 6¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("julho")) {
+
+			System.out.println(mes + " √© o 7¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("agosto")) {
+
+			System.out.println(mes + " √© o 8¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("setembro")) {
+
+			System.out.println(mes + " √© o 9¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("outubro")) {
+
+			System.out.println(mes + " √© o 10¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("novembro")) {
+
+			System.out.println(mes + " √© o 11¬∫ m√™s do ano ");
+
+		} else if (mes.equalsIgnoreCase("dezembro")) {
+
+			System.out.println(mes + " √© o 12¬∫ m√™s do ano ");
+
+		} else {
+			System.out.println("O m√™s digitado n√£o existe.");
 		}
 
-
-		
-
 	}
-	
+
 	public static void exercicio9() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite o numero referente ao  mÍs: ");
+		System.out.println("Digite o numero referente ao  m√™s: ");
 		int mes = scanner.nextInt();
 
 		if(mes >= 1 && mes <= 12){
-			
-			System.out.println("Digite o dia do  mÍs: ");
+
+			System.out.println("Digite o dia do  m√™s: ");
 			int dia = scanner.nextInt();
-			
+
 			switch (mes) {
 			case 1:
-				if(dia >= 1 && mes <= 31){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em janeiro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 2:
-				if(dia >= 1 && mes <= 28){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 28){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em fevereiro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 3:
-				if(dia >= 1 && mes <= 31){
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em mar√ßo.");
 					
-					System.out.println("A data digita È valida. ");
-					
+
 				}else{
+
+					System.out.println("A data digita √© invalida. ");
 					
-					System.out.println("A data digita È invalida. ");
-					
+
 				}
-				
+
 				break;
-				
+
 			case 4:
-				if(dia >= 1 && mes <= 30){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em abril.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 5:
-				if(dia >= 1 && mes <= 31){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em maio.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 6:
-				if(dia >= 1 && mes <= 30){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em junho.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 7:
-				if(dia >= 1 && mes <= 31){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em julho.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 8:
-				if(dia >= 1 && mes <= 30){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em agosto.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 9:
-				if(dia >= 1 && mes <= 31){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em setembro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 10:
-				if(dia >= 1 && mes <= 30){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em outubro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 11:
-				if(dia >= 1 && mes <= 31){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em novembro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
+
 			case 12:
-				if(dia >= 1 && mes <= 30){
-					
-					System.out.println("A data digita È valida. ");
-					
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+					System.out.println("Voc√™ faz aniversario em dezembro.");
+
 				}else{
-					
-					System.out.println("A data digita È invalida. ");
-					
+
+					System.out.println("A data digita √© invalida. ");
+
 				}
-				
+
 				break;
-				
-				
-				
-				
 
 			default:
 				break;
 			}
-			
+
 		}else{
-			
-			System.out.println("O mes digitado È invalido. ");
-			
+
+			System.out.println("O mes digitado √© invalido. ");
+
 		}
 
 	}
-	
+
 	public static void exercicio10() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite o 1∫ n˙mero: ");
+		System.out.println("Digite o 1¬∫ n√∫mero: ");
 		int numero1 = scanner.nextInt();
-		System.out.println("Digite o 2∫ n˙mero: ");
+		System.out.println("Digite o 2¬∫ n√∫mero: ");
 		int numero2 = scanner.nextInt();
 
 		if (numero1 <= numero2) {
@@ -444,61 +449,619 @@ public class Main {
 		}
 
 	}
-	
+
 	public static void exercicio11() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite a idade da 1∫ pessoa: ");
+		System.out.println("Digite a idade da 1¬™ pessoa: ");
 		int numero1 = scanner.nextInt();
-		System.out.println("Digite a idade da 2∫ pessoa: ");
+		System.out.println("Digite a idade da 2¬™ pessoa: ");
 		int numero2 = scanner.nextInt();
 
 		if (numero1 < numero2) {
 
-			System.out.println("A 2™ pessoa È a mais velha.");
+			System.out.println("A 2¬™ pessoa √© a mais velha.");
 
-		} else if(numero1 == numero2) {
+		} else if (numero1 == numero2) {
 
 			System.out.println("As 2 pessoas tem a mesma idade.");
 
-		}else{
-			
-			System.out.println("As 1™ pessoas tem a mesma idade.");
-			
+		} else {
+
+			System.out.println("A 1¬™ pessoas √© a mais velha.");
+
 		}
 
 	}
-	
+
 	public static void exercicio12() {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Digite a idade da 1∫ pessoa: ");
-		int numero1 = scanner.nextInt();
-		System.out.println("Digite a idade da 2∫ pessoa: ");
-		int numero2 = scanner.nextInt();
+		System.out.println("Digite o nome da 1¬™ pessoa: ");
+		String nome1 = scanner.nextLine();
+		System.out.println("Digite o dia do aniversario da 1¬™ pessoa: ");
+		int dia1 = scanner.nextInt();
+		System.out.println("Digite o n√∫mero referente ao m√™s do aniversario da 1¬™ pessoa: ");
+		int mes1 = scanner.nextInt();
+		System.out.println("Digite o nome da 2¬™ pessoa: ");
+		scanner.nextLine();
+		String nome2 = scanner.nextLine();
+		System.out.println("Digite o dia do aniversario da 2¬™ pessoa: ");
+		int dia2 = scanner.nextInt();
+		System.out.println("Digite o n√∫mero referente ao m√™s do aniversario da 2¬™ pessoa: ");
+		int mes2 = scanner.nextInt();
 
-		if (numero1 < numero2) {
+		if (mes1 < mes2) {
 
-			System.out.println("A 2™ pessoa È a mais velha.");
+			System.out.println(nome1);
 
-		} else if(numero1 == numero2) {
+		} else if (mes1 > mes2) {
 
-			System.out.println("As 2 pessoas tem a mesma idade.");
+			System.out.println(nome2);
 
-		}else{
-			
-			System.out.println("As 1™ pessoas tem a mesma idade.");
-			
+		} else {
+
+			if (dia1 < dia2) {
+
+				System.out.println(nome1);
+
+			} else if (dia1 > dia2) {
+
+				System.out.println(nome2);
+
+			} else {
+
+				System.out.println("Ambos " + nome1 + " e " + nome2 + " fazem aniversario juntos.");
+
+			}
+
 		}
-		
 
 	}
-	
-	public static void main(String[] args) {
 
-		exercicio10();
+	public static void exercicio13() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite o ano: ");
+		int ano = scanner.nextInt();
+		System.out.println("Digite o numero referente ao  m√™s: ");
+		int mes = scanner.nextInt();
+		System.out.println("Digite o dia do  m√™s: ");
+		int dia = scanner.nextInt();
+		if(mes >= 1 && mes <= 12){
+
+			switch (mes) {
+			case 1:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 2:
+				if(((ano - 2012) % 4) == 0){
+
+					if(dia >= 1 && dia <= 29){
+
+						System.out.println("A data digita √© valida. ");
+
+					}else{
+
+						System.out.println("A data digita √© invalida. ");
+
+					}
+
+				}else{
+
+					if(dia >= 1 && dia <= 28){
+
+						System.out.println("A data digita √© valida. ");
+
+					}else{
+
+						System.out.println("A data digita √© invalida. ");
+
+					}
+
+				}
+
+
+				break;
+
+			case 3:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 4:
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 5:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 6:
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 7:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 8:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 9:
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 10:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 11:
+				if(dia >= 1 && dia <= 30){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			case 12:
+				if(dia >= 1 && dia <= 31){
+
+					System.out.println("A data digita √© valida. ");
+
+				}else{
+
+					System.out.println("A data digita √© invalida. ");
+
+				}
+
+				break;
+
+			default:
+				break;
+			}
+
+		}else{
+
+			System.out.println("A data digita √© invalida. ");
+
+		}
+
+	}
+
+	public static void exercicio14() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite as horas: ");
+		int horas = scanner.nextInt();
+		System.out.println("Digite os minutos: ");
+		int minutos = scanner.nextInt();
+		System.out.println("Digite os segundos: ");
+		int segundos = scanner.nextInt();
+
+		if ((horas <= 23) && (horas >= 0)) {
+
+			if((minutos >= 0) && (minutos <= 59)){
+
+				if((segundos >= 0) && (segundos <= 59)){
+
+					System.out.println("Este √© um hor√°rio v√°lido.");
+
+
+				}else{
+
+					System.out.println("Este n√£o √© um hor√°rio v√°lido.");
+
+				}
+
+			}else{
+
+				System.out.println("Este n√£o √© um hor√°rio v√°lido.");
+
+			}
+
+		} else {
+
+			System.out.println("Este n√£o √© um hor√°rio v√°lido.");
+
+		}
+
+	}
+
+
+
+	public static void exercicio15() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("1¬∫ hor√°rio: ");
+		System.out.println("Digite as horas: ");
+		int horas1 = scanner.nextInt();
+		System.out.println("Digite os minutos: ");
+		int minutos1 = scanner.nextInt();
+		System.out.println("Digite os segundos: ");
+		int segundos1 = scanner.nextInt();
+
+		System.out.println("2¬∫ hor√°rio: ");
+		System.out.println("Digite as horas: ");
+		int horas2 = scanner.nextInt();
+		System.out.println("Digite os minutos: ");
+		int minutos2 = scanner.nextInt();
+		System.out.println("Digite os segundos: ");
+		int segundos2 = scanner.nextInt();
+
+		double horario1seg = (horas1 * 3600) + (minutos1 * 60) + segundos1;
+		double horario2seg = (horas2 * 3600) + (minutos2 * 60) + segundos2;
+
+		double diferenca = horario1seg - horario2seg;
+
+		if(diferenca < 0){
+
+			diferenca *= -1;
+
+		}
+
+		System.out.println("A diferen√ßa entre os hor√°rio √© de "+diferenca+" segundos");
+
+	}
+
+	public static void exercicio16() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite o 1¬∫ n√∫mero: ");
+		int menor = scanner.nextInt();
+		System.out.println("Digite o 2¬∫ n√∫mero: ");
+		int medio = scanner.nextInt();
+		System.out.println("Digite o 3¬∫ n√∫mero: ");
+		int maior = scanner.nextInt();
+
+		int aux;		
+
+		if (menor >= maior ) {
+
+			aux = maior;
+			maior = menor;
+			menor = aux;
+		}
+
+		if (menor >= medio){
+
+			aux = menor;
+			menor = medio;
+			medio = aux;
+		}
+
+
+		if (medio >= maior){
+
+
+			aux = medio;
+			medio = maior;
+			maior = aux;
+		}
+
+		System.out.println(menor + " " + medio + " " + maior);
+
+	}
+
+	public static void exercicio17() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite o dia do aniversario da 1¬™ pessoa: ");
+		int dia1 = scanner.nextInt();
+		System.out.println("Digite o n√∫mero referente ao m√™s do aniversario da 1¬™ pessoa: ");
+		int mes1 = scanner.nextInt();
+
+		System.out.println("Digite o dia do aniversario da 2¬™ pessoa: ");
+		int dia2 = scanner.nextInt();
+		System.out.println("Digite o n√∫mero referente ao m√™s do aniversario da 2¬™ pessoa: ");
+		int mes2 = scanner.nextInt();
+
+		if(mes1 == mes2){
+
+			if(dia1 == dia2){
+
+				System.out.println("As datas s√£o iguais. ");
+
+			} else {
+
+				System.out.println("As datas n√£o s√£o iguais. ");
+
+			}
+
+		} else {
+
+			System.out.println("As datas n√£o s√£o iguais. ");
+
+		}
+
+	}
+
+	public static void exercicio18() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite o 1¬∫ n√∫mero: ");
+		int menor = scanner.nextInt();
+		System.out.println("Digite o 2¬∫ n√∫mero: ");
+		int medio = scanner.nextInt();
+		System.out.println("Digite o 3¬∫ n√∫mero: ");
+		int maior = scanner.nextInt();
+
+		int aux;		
+
+		if (menor >= maior ) {
+
+			aux = maior;
+			maior = menor;
+			menor = aux;
+		}
+
+		if (menor >= medio){
+
+			aux = menor;
+			menor = medio;
+			medio = aux;
+		}
+
+
+		if (medio >= maior){
+
+
+			aux = medio;
+			medio = maior;
+			maior = aux;
+		}
+
+		if((menor == medio) || (menor == maior) || (medio == maior)){
+
+			System.out.println("A n√∫meros repetidos na sequ√™ncia.");
+
+		}
+
+		System.out.println(maior);
+
+	}
+
+	public static void exercicio19() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite sua idade: ");
+		int idade = scanner.nextInt();
+
+		if (idade >= 16) {
+
+			if ((idade < 18) && (idade > 70)) {
+
+				System.out.println("Seu voto √© facultativo.");
+
+			} else {
+
+				System.out.println("Seu voto √© obrigat√≥rio.");
+			}
+
+
+		} else {
+
+			System.out.println("Voc√™ n√£o pode votar. ");
+
+		}
+
+	}
+
+	public static void exercicio20() {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Digite de 4 digitos: ");
+		int numero = scanner.nextInt();
+		int milhar = 0;
+		int centena = 0;
+		int dezena = 0;
+		int unidade = 0;
+		int resto = 0;
+
+		if(numero != 0){
+			milhar = numero / 1000;
+			resto = numero % 1000;
+			numero = resto;
+		}
+
+		if (numero != 0){
+
+			centena = numero / 100;
+			resto = numero % 100;
+			numero = resto;
+		}
+
+		if (numero != 0){
+
+			dezena = numero / 10;
+			resto = numero % 10;
+			unidade = resto;
+
+		}
+		
+		System.out.println("Milhar: " + milhar);
+		System.out.println("centena: " + centena);
+		System.out.println("dezena: " + dezena);
+		System.out.println("unidade: " + unidade);
+
+	}
+
+	public static void main(String[] arzengs) {
+
+		while (true) {
+			
+			Scanner scanner = new Scanner(System.in);
+
+			System.out.println("Digite o n√∫mero do exerc√≠cio que deseja executar: ");
+			int exercicio = scanner.nextInt();
+			
+			switch (exercicio) {
+			case 1:
+				exercicio1();				
+				break;
+			case 2:
+				exercicio2();				
+				break;
+			case 3:
+				exercicio3();				
+				break;
+			case 4:
+				exercicio4();				
+				break;
+			case 5:
+				exercicio5();				
+				break;
+			case 6:
+				exercicio6();				
+				break;
+			case 7:
+				exercicio7();				
+				break;
+			case 8:
+				exercicio8();				
+				break;
+			case 9:
+				exercicio9();				
+				break;
+			case 10:
+				exercicio10();				
+				break;
+			case 11:
+				exercicio11();				
+				break;
+			case 12:
+				exercicio12();				
+				break;
+			case 13:
+				exercicio13();				
+				break;
+			case 14:
+				exercicio14();				
+				break;
+			case 15:
+				exercicio15();				
+				break;
+			case 16:
+				exercicio16();				
+				break;
+			case 17:
+				exercicio17();				
+				break;
+			case 18:
+				exercicio18();				
+				break;
+			case 19:
+				exercicio19();				
+				break;
+			case 20:
+				exercicio20();				
+				break;
+				
+
+			default:
+				System.out.println("Este exerc√≠cio n√£o existe: ");
+				break;
+			}
+			
+			
+		}
 
 	}
 
